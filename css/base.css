@@ -1,0 +1,297 @@
+
+.spacer { padding:10px; }
+
+.spacerTB {
+	margin-top:20px !important;
+	margin-bottom:20px !important;
+}
+.spacerLeft { margin-left:20px; }
+.spacerRight { margin-right:20px; }
+.spacerTop { margin-top:20px; }
+.spacerBottom { margin-bottom:20px; }
+
+/*************************************************/
+
+.txtL { text-align: left !important; }
+.txtR { text-align: right !important; }
+.txtC { text-align: center !important; }
+
+.floatR { float: right !important; }
+.floatL { float: left !important; }
+
+
+/* HR spacers **************************************/
+
+.hrSpacerXS , .hrSpacerS , .hrSpacerM , .hrSpacerL , .hrSpacerXL {
+	position:static;
+	visibility:hidden;
+	display:block;
+	width:100%;
+	padding:0;
+	margin:0;
+	border:0;
+	background:none;
+	background-color:transparent;
+}
+.hrSpacerXS { height:5px; }
+.hrSpacerS { height:10px; }
+.hrSpacerM { height:20px; }
+.hrSpacerL { height:40px; }
+.hrSpacerXL { height:60px; }
+
+/* responsive embed
+******************************************************/
+
+video { /* html5 video */
+	max-width: 100%;
+	height: auto;
+}
+
+.embed {
+	position: relative;
+	display: block;
+	height:0;
+	margin-bottom: 15px;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	overflow: hidden;
+	background-color: #000;
+}
+.embed iframe,  
+.embed object,  
+.embed embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.embed p iframe,  
+.embed p object,  
+.embed p embed {
+	width: 100%;
+}
+
+/*************************************************************************/
+
+.page , .anchoFix {
+	position:relative;
+    margin:0 auto;
+    padding:0;
+}
+.page {}
+.anchoFix {
+	margin:0 auto;
+	padding:0 20px;
+	max-width: 1200px;
+	min-width:950px;
+}
+
+.shell , .shellOp {
+	position:relative;
+	display:block;
+	margin:0;
+	padding:0;
+	border:0;
+}
+.shell { margin:0 10px !important; }
+.shellOp { margin-right:20px !important; }
+
+
+.spacerXS { padding:5px; }
+.spacerS { padding:8px; }
+.spacer { padding:10px; }
+.spacerL { padding:16px; }
+
+.spacerLeft { margin-left:20px !important; }
+.spacerRight { margin-right:20px !important; }
+
+
+/* layout columnas
+****************************************************************/
+
+.blok10 ,
+.blok15 ,
+.blok20 ,
+.blok25 ,
+.blok30 ,
+.blok33 ,
+.blok34 ,
+.blok35 ,
+.blok40 ,
+.blok45 ,
+.blok50 ,
+.blok55 ,
+.blok60 ,
+.blok65 ,
+.blok66 ,
+.blok67 ,
+.blok70 ,
+.blok75 ,
+.blok80 ,
+.blok100 {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+	border:0;
+}
+
+.blok10 { width:10%; }
+.blok15 { width:15%; }
+.blok20 { width:20%; }
+.blok25 { width:25%; }
+.blok30 { width:30%; }
+.blok33 { width:33.3333%; }
+.blok34 { width:34%; }
+.blok35 { width:35%; }
+.blok40 { width:40%; }
+.blok45 { width:45%; }
+.blok50 { width:50%; }
+.blok55 { width:55%; }
+.blok60 { width:60%; }
+.blok65 { width:65%; }
+.blok66 { width:66.6666%; }
+.blok67 { width:67%; }
+.blok70 { width:70%; }
+.blok75 { width:75%; }
+.blok80 { width:80%; } /*Añadido para añadir los tipos de usuario, inicial 80% */
+.blok100 { width:100%; }
+
+
+.formBlok .blok10 ,
+.formBlok .blok15 ,
+.formBlok .blok20 ,
+.formBlok .blok25 ,
+.formBlok .blok30 ,
+.formBlok .blok33 ,
+.formBlok .blok34 ,
+.formBlok .blok35 ,
+.formBlok .blok40 ,
+.formBlok .blok45 ,
+.formBlok .blok50 ,
+.formBlok .blok55 ,
+.formBlok .blok60 ,
+.formBlok .blok65 ,
+.formBlok .blok66 ,
+.formBlok .blok67 ,
+.formBlok .blok70 ,
+.formBlok .blok75 ,
+.formBlok .blok80 ,
+.formBlok .blok100 {
+    padding:5px 3px;
+}
+
+/***********************************************************************/
+
+/* clearfix */
+.clearfix:after, .widget li:after, #body:after, #footer:after, footer:after, .pagenav:after, #main-nav:after, .menu:after, .gallery:after, #content:after
+{ visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content
+{ display: inline-block; }
+/* clearfix for ie7 */
+.clearfix, .widget li, #body, #footer, footer, .pagenav, #main-nav, .menu, .gallery, #content
+{ display: block; zoom: 1; }
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+* html .clearfix { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+.noDisplay {
+	display: none ;
+}
+
+/* consola forms
+************************************************/
+
+#alerta ,
+#cargando , #flotanteComentarios {
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:9999999999999999999999998999969;
+	background-color:rgba(0,17,38, 0.5);
+}
+#alerta {
+	display:none;
+}
+#cargando {
+	display:none;
+}
+#flotanteComentarios , #flotanteOrdenPedido {
+	display:none;
+}
+
+#flotanteOrdenPedido p {
+	margin-bottom: 5px ;
+}
+
+
+.loadingIMG {
+	position:relative;
+	text-align: center;
+}
+.loadingIMG span {
+	display: inline-block;
+	margin:auto;
+	padding:2em;
+	background-color: rgba(0, 17, 38, 1);
+	border-radius:10em;
+	/*box-shadow:0 0 10px rgba(0, 17, 38, 1);*/
+}
+.loadingIMG img {
+	display:block;
+}
+
+#alerta #alertaC {
+	position:relative;
+	top:30%;
+	width:500px;
+	margin:0 auto;
+	padding:1em;
+	text-align:center;
+	text-shadow:0 1px 1px #fff;
+	
+	border-radius:1em;
+	box-shadow:0 0 5px #000;
+	
+background: #e5e5e5;
+background: -moz-linear-gradient(top,  #e5e5e5 0%, #d8d9da 50%, #d2d4d6 51%, #bbbdc1 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e5e5e5), color-stop(50%,#d8d9da), color-stop(51%,#d2d4d6), color-stop(100%,#bbbdc1));
+background: -webkit-linear-gradient(top,  #e5e5e5 0%,#d8d9da 50%,#d2d4d6 51%,#bbbdc1 100%);
+background: -o-linear-gradient(top,  #e5e5e5 0%,#d8d9da 50%,#d2d4d6 51%,#bbbdc1 100%);
+background: -ms-linear-gradient(top,  #e5e5e5 0%,#d8d9da 50%,#d2d4d6 51%,#bbbdc1 100%);
+background: linear-gradient(to bottom,  #e5e5e5 0%,#d8d9da 50%,#d2d4d6 51%,#bbbdc1 100%);
+}
+
+#alerta #alertaCtxt {
+	margin:1em;
+}
+#alerta #alertaCtxt h1 ,
+#alerta #alertaCtxt h2 ,
+#alerta #alertaCtxt h3 {}
+
+.flotante {
+	text-align: center ;
+	background-color: #ffffff;
+}
+
+button.NoDisplay  , .NoDisplay  , button.noDisplay  , .noDisplay  {
+	display: none !important ;
+}
+
+.r3 {
+	border-radius:3px;
+	-webkit-border-radius:3px;
+	-khtml-border-radius:3px;
+	-moz-border-radius:3px;
+}

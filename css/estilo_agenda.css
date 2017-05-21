@@ -1,0 +1,74 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:500,300);
+                 
+                /*html,body{height:100%;width:100%;outline:0;overflow:hidden}*/
+
+/*body {text-align:center;margin:0;overflow:hidden;padding:0px 0}*/
+p#vtip { display: none; position: absolute; padding: 5px; left: 5px; font-size: 0.75em; background-color: #666666; border: 1px solid #666666; -moz-border-radius: 5px; -webkit-border-radius: 5px; z-index: 9999;color:white }
+p#vtip #vtipArrow { position: absolute; top: -10px; left: 5px }
+/*.ok{border:1px dotted green;color:green;padding:10px}*/
+.verde,.ok{font-weight:500;background:green;color:#fff}
+/*#agenda h1{text-align:left;margin:0;font-size:1.5em;color:#312c2b}
+#agenda h2{text-align:left;margin:0;font-size:0.85em;color:#969696}
+#agenda table.calendario {margin:10px auto;width:100%;border:1px dotted #ccc;font-size:25px;}*/
+.calendario_ajax{margin:15px 0 0 0;height:510px;position:relative}
+        .calendario_ajax h2{text-align:left;margin:0 0 0 28px;font-size:1.30em;color:#000;font-weight: bold;}
+        .calendario_ajax table.calendario {margin:25px;width:43%;border:solid #ccc;border-width:1px 0 0 1px;}
+                table.calendario th {border:0;font-weight:250;background:#666;color:white;padding:12px;font-size:1em;height:15px;}
+                table.calendario td.dias{font-family: 'Roboto';padding:10px;text-align:center;border:solid #ccc;border-width:0 1px 1px 0;white-space:pre-line;font-size:1.2em;width:19%;color:#b1adad;position:relative;/*background:#fff*/;height:25px;}
+        .calendario td.desactivada {background:#e9e9e9;}
+        table.calendario td.hoy{font-weight:500;color:orange;}
+        .calendario td.evento a{color:red;}
+                a.agregar_evento{display:block;position:absolute;right:0;top:0; background:#e9e9e9 50% 50% no-repeat;border-radius:0 0 10px 10px;width:15px;height:18px;text-decoration:none}
+        .calendario td a{color:#666#e9e9e9;text-decoration:none;}
+       
+        .rojo{font-weight:500;background:red;color:#fff}
+       
+/*.calendario th {border:1px dotted #ccc;font-weight:bold;background:#666;color:white;padding:10px 5px;font-size:0.75em;}
+.calendario td{padding:10px 5px;text-align:center;border:1px dotted #ccc;width:100px;white-space:pre-line;}
+.calendario td p{margin:5px;font-size:12px;border:1px solid #ccc;text-align:left;padding:5px;}
+.calendario td.desactivada {background:#dcdcdc;}
+.calendario td.activa {background:#ffffff;}
+.calendario td.evento {color:red;}
+.calendario td.hoy{font-weight:bold;}
+.calendario form{margin:5px 0 !important}
+.calendario input.text{border:1px dotted #ccc;background:white;width:200px !important}
+.calendario input.enviar{border:1px dotted #ccc;background:white;width:70px !important;background:#ccc;margin:0 0 0 10px;}
+.calendario td img{vertical-align:middle;float:right;border:0;width:16px;height:16px}*/
+
+p.toggle {text-align:center;}
+a.siguiente,a.anterior{color:red;text-decoration:none;line-height:40px;}
+.vtip{cursor:pointer;}
+.verde{font-size:125% !important;font-weight:bold;color:green;}
+.rojo{font-size:125% !important;font-weight:bold;color:red;}
+/*.calendario_ajax h2{text-align:center;margin:0 0 10px 0;font-size:1.5em;color:#000}
+.calendario_ajax table.calendario {margin:0;width:100%;border:solid #ccc;border-width:1px 0 0 1px}*/
+#mask {position:absolute;left:550px;top:0;z-index:9000;background: #e6e6e6;display:none;width:50%;height:90%;}
+
+#respuesta_form,#respuesta{clear:both;padding:3px 0}
+  
+.window {position:absolute;top:5px;right:5px;left:5px;bottom:5px;display:block;z-index:9999;padding:20px;background-color:#ffffff;overflow:auto}
+
+.window h2{text-align:center;margin:0 0 10px 0;font-size:1.5em;color:#000}
+.window a.close{position:absolute;right:0;top:0;padding:10px;background:#e9e9e9 url(../img/img_calendario/delete.png) 50% 50% no-repeat;text-decoration:none}
+.window p.l{margin:0 0 5px 0px;font-size:1em;border:1px solid #e9e9e9;text-align:left;padding:10px;clear:both;}
+.window form{padding:10px;clear:both;background:#e9e9e9;float:left;width:90%;position:relative}
+/*.window input[type=text]#hora{border:2;background:white;width:40%;padding:5px;float:left;}*/
+.window input[type=text]#telef{border:2;background:white;width:95%;padding:5px;float:left;}
+.window input[type=text]{border:2;background:white;width:90%;padding:5px;float:left;}
+.window input[type=text]#contacto{border:2;background:white;width:180px;padding:5px;float:left;margin-right: 10px;}
+.window input[type=text]#razon{border:2;background:white;width:200px;padding:5px;float:left;}
+.window input[type=text]#codcliente{border:2;background:white;width:45%;padding:5;margin:0;float:left;height: 29px;-moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;}
+.window textarea{border:2;background:white;width:100%;padding:5px;float:left}
+.window select{border:2;background:white;width:180px;padding:0;margin:0;float:left;height: 29px;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;}
+.window select#codpedido{border:2;background:white;width:103px;padding:5px;float:left;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                box-sizing: border-box;}
+.window input[type=button]{border:0;width:35%;background:#ccc;float:right;padding:5px}
+.window a.eliminar_evento{vertical-align:middle;float:right;border:0;width:16px;height:16px}
+label.error {position:absolute;left:13px;top:13px;padding:0;width:20px;height:20px;background:#fff url(../img/img_calendario/delete.png) 50% 50% no-repeat;text-decoration:none;overflow:hidden;text-indent:-999em}
